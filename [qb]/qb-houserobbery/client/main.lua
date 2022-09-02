@@ -235,7 +235,13 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
                 if CurrentCops >= Config.MinimumHouseRobberyPolice then
                     if not Config.Houses[closestHouse]["opened"] then
                         PoliceCall()
-                        TriggerEvent('qb-lockpick:client:openLockpick', lockpickFinish)
+                        -- TriggerEvent('qb-lockpick:client:openLockpick', lockpickFinish)
+                        -- Replacing default lockpicking with NP style lockpick game
+                        local time = math.random(10, 20)
+                        local circles = math.random(2, 4)
+                        local success = exports['qb-lock']:StartLockPickCircle(circles, time, success)
+                        lockpickFinish(success)
+
                         if math.random(1, 100) <= 85 and not IsWearingHandshoes() then
                             local pos = GetEntityCoords(PlayerPedId())
                             TriggerServerEvent("evidence:server:CreateFingerDrop", pos)
@@ -254,7 +260,13 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
                         if CurrentCops >= Config.MinimumHouseRobberyPolice then
                             if not Config.Houses[closestHouse]["opened"] then
                                 PoliceCall()
-                                TriggerEvent('qb-lockpick:client:openLockpick', lockpickFinish)
+                                -- TriggerEvent('qb-lockpick:client:openLockpick', lockpickFinish)
+                                -- Replacing default lockpicking with NP style lockpick game
+                                local time = math.random(5, 15)
+                                local circles = math.random(2, 4)
+                                local success = exports['qb-lock']:StartLockPickCircle(circles, time, success)
+                                lockpickFinish(success)
+
                                 if math.random(1, 100) <= 85 and not IsWearingHandshoes() then
                                     local pos = GetEntityCoords(PlayerPedId())
                                     TriggerServerEvent("evidence:server:CreateFingerDrop", pos)
