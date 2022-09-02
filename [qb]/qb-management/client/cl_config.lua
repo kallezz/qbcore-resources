@@ -22,6 +22,9 @@ Config.BossMenus = {
     ['mechanic'] = {
         vector3(-339.53, -156.44, 44.59),
     },
+    ['bahama_mamas'] = {
+        vector3(-1386.59, -633.5, 30.82),
+    },
 }
 
 Config.BossMenuZones = {
@@ -42,6 +45,9 @@ Config.BossMenuZones = {
     },
     ['mechanic'] = {
         { coords = vector3(-339.53, -156.44, 44.59), length = 1.15, width = 2.6, heading = 353.0, minZ = 43.59, maxZ = 44.99 },
+    },
+    ['bahama_mamas'] = {
+        { coords = vector3(-1386.59, -633.5, 30.82), length = 0.5, width = 1, heading = 0, minZ = 43.59, maxZ = 44.99 },
     },
 }
 

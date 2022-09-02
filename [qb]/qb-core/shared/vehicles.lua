@@ -2,6 +2,16 @@ QBShared = QBShared or {}
 QBShared.VehicleHashes = {}
 
 QBShared.Vehicles = {
+	--- Imports
+	['gtr'] = {
+		['name'] = 'GTR 2017',
+		['brand'] = 'Nissan',
+		['model'] = 'gtr',
+		['price'] = 250000,
+		['category'] = 'import',
+		['hash'] = 'gtr',
+		['shop'] = 'pdm',
+	},
 	--- Compacts
 	['asbo'] = {
 		['name'] = 'Asbo',

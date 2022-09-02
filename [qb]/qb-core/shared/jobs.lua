@@ -279,5 +279,34 @@ QBShared.Jobs = {
                 payment = 50
             },
         },
-	},
+    },
+    ['bahama_mamas'] = {
+        label = 'Bahama Mamas',
+        defaultDuty = true,
+        offDutyPay = false,
+        bossmenu = vector3(-1386.03, -634.02, 30.82),
+        grades = {
+            ['0'] = {
+                name = 'Trainee',
+                payment = 75
+            },
+            ['1'] = {
+                name = 'Bartender',
+                payment = 100
+            },
+            ['2'] = {
+                name = 'Event Manager',
+                payment = 200
+            },
+            ['3'] = {
+                name = 'Sales Manager',
+                payment = 250
+            },
+            ['4'] = {
+                name = 'Boss',
+                isboss = true,
+                payment = 450
+            },
+        },
+    },
 }
